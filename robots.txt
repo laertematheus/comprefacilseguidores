@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /painel/
+
+Sitemap: https://laertematheus.github.io/comprefacilseguidores/sitemap.xml

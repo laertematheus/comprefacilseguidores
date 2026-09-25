@@ -8,6 +8,18 @@ Plataforma de venda de seguidores brasileiros por nicho, com pagamento via PIX. 
 
 Números, depoimentos e o feed "ao vivo" da prévia são ilustrativos e precisam ser trocados por dados reais antes do lançamento.
 
+## Páginas de SEO
+
+31 páginas indexáveis geradas por `tools/gerar_paginas.py`: 21 de serviço (plataforma × serviço), 3 de intenção (brasileiros, reais, baratos), 5 guias e os hubs `/servicos/` e `/guia/`, mais `sitemap.xml` e `robots.txt`.
+
+O gerador lê `data/catalogo_precos.csv` (custo do BRSMM × 2,3), que fica **fora do git** para não expor a margem. Sempre que o catálogo mudar:
+
+```bash
+python3 tools/gerar_paginas.py
+```
+
+Ao trocar para um domínio próprio, altere `BASE` no gerador e o `canonical` do `index.html`.
+
 ## Ver localmente
 
 Abra o `index.html` no navegador. Não precisa de build.
