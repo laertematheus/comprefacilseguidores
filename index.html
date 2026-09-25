@@ -6,6 +6,12 @@
 <meta name="description" content="Seguidores brasileiros do seu nicho, entregues aos poucos e sem senha. Responda 13 perguntas e receba um plano feito para o seu perfil. Pagamento via PIX.">
 <style>[hidden]{display:none!important}</style>
 <title>CompreFácil Seguidores</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#FFFFFF">
+<meta property="og:title" content="CompreFácil Seguidores">
+<meta property="og:description" content="Seguidores brasileiros do seu nicho, entregues aos poucos e sem senha. Pagamento via PIX.">
+<meta property="og:image" content="assets/icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap">
@@ -118,12 +124,12 @@ img{max-width:100%}
    ========================================================= */
 .logo{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:var(--fs-h5);letter-spacing:-.02em}
 .logo-sub{font-weight:400;color:var(--muted);margin-left:2px}
-.brand-mark{width:32px;height:32px;border-radius:9px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:700;font-size:21px;line-height:1;padding-bottom:3px;position:relative;flex:none}
-.brand-mark::after{content:"";position:absolute;right:6px;bottom:7px;width:5px;height:5px;border-radius:50%;background:var(--yellow)}
-.brand-mark.lg{width:64px;height:64px;border-radius:18px;font-size:40px;padding-bottom:6px}
-.brand-mark.lg::after{right:12px;bottom:14px;width:9px;height:9px}
-.brand-mark.sm{width:26px;height:26px;border-radius:8px;font-size:17px}
-.brand-mark.sm::after{right:5px;bottom:5px;width:4px;height:4px}
+/* coroa (assets/logo-256.png, proporção 638×522) */
+.brand-mark{display:inline-block;flex:none;width:40px;height:33px;background:url(assets/logo-256.png) center/contain no-repeat}
+.brand-mark.lg{width:104px;height:85px}
+.brand-mark.sm{width:26px;height:22px}
+/* avatar: coroa dentro de um círculo branco (bolhas do onboarding) */
+.ph-ask .brand-mark{width:26px;height:26px;border-radius:50%;background-color:#fff;background-size:18px auto;box-shadow:0 1px 2px rgba(1,0,18,.08)}
 
 /* =========================================================
    HEADER
@@ -326,8 +332,7 @@ img{max-width:100%}
 @keyframes inBack{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:none}}
 
 .ask{display:flex;gap:12px;align-items:flex-start;margin:32px 0 24px}
-.ask .brand-mark{width:40px;height:40px;border-radius:12px;font-size:25px}
-.ask .brand-mark::after{right:8px;bottom:9px;width:6px;height:6px}
+.ask .brand-mark{width:44px;height:44px;border-radius:50%;background-color:#fff;background-size:30px auto;box-shadow:0 1px 2px rgba(1,0,18,.08)}
 .bubble{background:#fff;border-radius:4px 20px 20px 20px;padding:14px 18px;box-shadow:0 1px 2px rgba(1,0,18,.05)}
 .bubble .d1{margin-top:4px}
 
@@ -575,7 +580,7 @@ img{max-width:100%}
      ========================================================= -->
 <header class="site-header">
   <div class="container nav">
-    <a class="logo" href="#topo" aria-label="CompreFácil Seguidores, início"><span class="brand-mark">c</span><span>comprefácil<span class="logo-sub">seguidores</span></span></a>
+    <a class="logo" href="#topo" aria-label="CompreFácil Seguidores, início"><span class="brand-mark"></span><span>comprefácil<span class="logo-sub">seguidores</span></span></a>
     <nav class="nav-links" aria-label="Principal">
       <a href="#como">Como funciona</a>
       <a href="#resultados">Resultados</a>
@@ -610,7 +615,7 @@ img{max-width:100%}
           <div class="phone-screen">
             <div class="ph-top"><svg class="ic"><use href="#i-caret-left"/></svg><div class="ph-track"><i style="width:69%"></i></div></div>
             <div class="ph-meta"><span>Seus seguidores ideais</span><span>9 de 13</span></div>
-            <div class="ph-ask"><span class="brand-mark sm">c</span><div class="ph-bubble">Sobre o que é o seu conteúdo?</div></div>
+            <div class="ph-ask"><span class="brand-mark sm"></span><div class="ph-bubble">Sobre o que é o seu conteúdo?</div></div>
             <div class="ph-grid">
               <span class="ph-chip on">Moda <svg class="ic"><use href="#i-check"/></svg></span>
               <span class="ph-chip">Beleza</span><span class="ph-chip">Fitness</span><span class="ph-chip">Humor</span>
@@ -744,7 +749,7 @@ img{max-width:100%}
       <div class="cmp-wrap">
         <table class="cmp">
           <thead>
-            <tr><th scope="col"><span class="sr-only"></span></th><th scope="col">Sites comuns</th><th scope="col" class="us"><span class="th-brand"><span class="brand-mark sm">c</span>CompreFácil</span></th></tr>
+            <tr><th scope="col"><span class="sr-only"></span></th><th scope="col">Sites comuns</th><th scope="col" class="us"><span class="th-brand"><span class="brand-mark sm"></span>CompreFácil</span></th></tr>
           </thead>
           <tbody>
             <tr><th scope="row">Seguidores brasileiros</th><td><span class="cell"><svg class="ic no"><use href="#i-x-circle"/></svg>Perfis gringos</span></td><td class="us"><span class="cell"><svg class="ic yes"><use href="#i-check-circle"/></svg>Sim, reais</span></td></tr>
@@ -838,7 +843,7 @@ img{max-width:100%}
   <div class="container">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a class="logo" href="#topo"><span class="brand-mark">c</span><span>comprefácil<span class="logo-sub">seguidores</span></span></a>
+        <a class="logo" href="#topo"><span class="brand-mark"></span><span>comprefácil<span class="logo-sub">seguidores</span></span></a>
         <p class="d1 lgpd"><svg class="ic"><use href="#i-shield"/></svg><span>Sua privacidade está protegida. Seguimos a LGPD, criptografamos seus dados e nunca pedimos sua senha.</span></p>
       </div>
       <div class="fcol"><h4>Produto</h4><a class="d1" href="#como">Como funciona</a><a class="d1" href="#precos">Preços</a><a class="d1" href="#resultados">Resultados</a><a class="d1" href="#duvidas">Dúvidas</a></div>
@@ -981,7 +986,7 @@ img{max-width:100%}
   /* ---------------- helpers de UI ---------------- */
   function firstName(){ return esc((S.name.trim().split(/\s+/)[0]) || ''); }
   function ask(title, sub){
-    return '<div class="ask"><span class="brand-mark" aria-hidden="true">c</span><div class="bubble"><h2 class="h5">' + title + '</h2>' + (sub ? '<p class="d1 muted">' + sub + '</p>' : '') + '</div></div>';
+    return '<div class="ask"><span class="brand-mark" aria-hidden="true"></span><div class="bubble"><h2 class="h5">' + title + '</h2>' + (sub ? '<p class="d1 muted">' + sub + '</p>' : '') + '</div></div>';
   }
   function optBtn(o, sel){
     return '<button type="button" class="opt" role="radio" aria-checked="' + !!sel + '" data-v="' + esc(o.v) + '">' +
@@ -1013,7 +1018,7 @@ img{max-width:100%}
     welcome: function(){
       var counts = ['6 perguntas', '2 perguntas', '4 perguntas', '1 pergunta'];
       return {
-        html: '<div class="qw"><span class="brand-mark lg" aria-hidden="true">c</span>' +
+        html: '<div class="qw"><span class="brand-mark lg" aria-hidden="true"></span>' +
           '<h1 class="h3">Descubra o plano ideal para o seu perfil crescer</h1>' +
           '<p class="p2 muted">Responda 13 perguntas rápidas. Leva menos de 1 minuto.</p>' +
           '<ol class="roadmap">' + BLOCKS.map(function(b, i){ return '<li><span class="rm-n">' + (i + 1) + '</span><span class="grow p2">' + b + '</span><span class="d1 muted">' + counts[i] + '</span></li>'; }).join('') + '</ol>' +

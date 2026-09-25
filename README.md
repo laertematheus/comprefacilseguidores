@@ -24,3 +24,4 @@ Abra o `index.html` no navegador. Não precisa de build.
 - Paleta: `#010012` `#002A5C` `#0E5DA0` `#FFC7AC` `#FFED97` `#DF309F`
 - Fonte: Source Sans 3 (escala H1 64 → t1 12, do Figma)
 - Ícones: Phosphor (peso bold)
+- Logo (coroa, PNG transparente): `assets/logo.png` em resolução cheia, `assets/logo-256.png` para a interface; favicon, apple-touch-icon e `icon-512.png` na mesma pasta
